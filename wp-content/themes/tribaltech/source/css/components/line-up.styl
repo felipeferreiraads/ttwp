@@ -1,0 +1,115 @@
+.line-up
+    padding 150px 0
+    background: $color.black
+    position relative
+    h2
+        font-family: $font-family.secondary
+        color: $color.blue !important
+        font-size 25px
+        letter-spacing: 15px
+        margin-bottom 70px
+        &:first-line
+            font-size 40px
+            color: $color.white
+            letter-spacing: 3px
+    .grid
+        width: 100%
+        overflow: visible !important
+    .grid-filter
+        display flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 70px
+        +below($bp.sm)
+            flex-wrap: wrap
+        h2
+            margin: 0
+    .filter
+        display flex
+        justify-content: flex-end
+        +below($bp.lg)
+            display none
+        button
+            padding: 8px
+            border: 2px solid white
+            color white
+            background transparent
+            text-transform: uppercase
+            font-size: 18px
+            cursor pointer
+            line-height: 1
+            margin-left: 10px
+            transition: .2s
+            outline: none
+            &:hover, &.active, &:active
+                background: $color.primary-three
+                border-color: $color.primary-three
+    .filter-mobile
+        border: 2px solid white
+        position: relative
+        +above($bp.lg)
+            display none
+        +below($bp.sm)
+            width: 100%
+            margin-top: 30px
+        &::after
+            content: ''
+            border: solid white
+            border-width: 0 2px 2px 0
+            display: inline-block
+            padding: 3px
+            transform: rotate(45deg) translateY(-50%)
+            position: absolute
+            top: 40%
+            right: 15px
+        select 
+            padding: 8px 25px 8px 8px
+            appearance none
+            -moz-appearance: none
+            -webkit-appearance: none
+            border: none
+            background: transparent
+            color: white
+            font-size: 18px
+            outline: none
+            +below($bp.sm)
+                width: 100%
+
+    .artist
+        width 33.33%
+        background-repeat none 
+        background-size cover
+        cursor pointer
+        +below($bp.lg)
+            width 50%
+        +below($bp.sm)
+            width 100%
+        &.multiply
+            background-blend-mode multiply
+            background-color: $color.multiply
+        &:hover
+            transition .2s
+            > .info
+                opacity 1
+        .info
+            width 100%
+            height 100%
+            background: rgba(0,0,0,0.6)
+            display flex
+            justify-content: center
+            align-items: center
+            transition .2s ease
+            opacity 0
+            span
+                font-size 20px
+                color: $color.white
+                font-family: $font-family.secondary
+                text-transform uppercase
+                letter-spacing: 10px
+                text-align: center
+    .sizer
+        width: 33.33%
+        +below($bp.lg)
+            width 50%
+        +below($bp.sm)
+            width 100%

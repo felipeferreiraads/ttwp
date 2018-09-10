@@ -1,0 +1,68 @@
+.menu
+    width 100%
+    background: $color.black
+    position fixed
+    top 0
+    left 0
+    z-index 9999
+    .grid
+        display flex
+        justify-content: center
+        align-items: center
+        position relative
+        height 40px
+        +below($bp.sm)
+            justify-content: flex-end
+        a
+            font-size 14px
+            color: $color.white
+            text-transform: uppercase
+            font-family: $font-family.secondary
+            &:not(:last-child)
+                margin-right 40px
+            +below($bp.sm)
+                &:not(.logo)
+                    display none
+        .menu-mobile
+            font-size 18px
+            color: $color.white
+            display none
+            margin-top 5px
+            +below($bp.sm)
+                display inline !important
+        .logo
+            position absolute
+            top 50%
+            left 0
+            transform translateY(-50%)
+            img 
+                height 30px
+
+.nav-mobile
+    width 100%
+    padding 20px
+    background: $color.black
+    position fixed
+    top 40px
+    right: 0
+    z-index 9999
+    display none
+    flex-direction: column
+    align-items: center
+    a
+        font-size 16px
+        color: $color.white
+        text-transform uppercase
+        text-align center
+        font-family: $font-family.secondary
+        &:not(:last-child)
+            margin-bottom 15px
+.overlay-menu
+    background rgba(0,0,0,0.7)
+    width 100%
+    height 100%
+    position fixed
+    top 0
+    left 0
+    z-index 9998
+    display none

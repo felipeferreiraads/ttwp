@@ -1,0 +1,56 @@
+.trip
+    padding 150px 0
+    position relative
+    background: url('../img/bg-excursoes.jpg') top left no-repeat
+    background-size: cover
+    .trips
+        display flex
+        flex-direction: column
+        align-items: flex-end
+        button
+            padding: 8px 15px
+            border: 2px solid white
+            color white
+            background transparent
+            text-transform: uppercase
+            font-size: 16px
+            cursor pointer
+            line-height: 1
+            margin: 0 0 70px 10px
+            transition: .2s
+            outline: none
+            letter-spacing: 3px
+            &:hover, &.active, &:active
+                background: $color.primary-three
+                border-color: $color.primary-three
+    .mails
+        font-size: 24px
+        color white
+        font-weight: bold
+        +below($bp.sm)
+            font-size: 18px
+        &.right
+            text-align: right
+    .packages
+        display flex
+        flex-direction: column
+        +below($bp.sm)
+            margin-top: 70px
+        .wt
+            display: flex
+            img
+                max-width 50px
+                margin-left: -18px
+            span
+                font-size: 18px
+                color white
+                font-weight: bold
+                text-transform: uppercase
+        .icons
+            max-width 300px
+            margin: 30px 0 20px
+        .info
+            font-size: 14px
+            color white
+            max-width 300px
+            margin-bottom: 20px

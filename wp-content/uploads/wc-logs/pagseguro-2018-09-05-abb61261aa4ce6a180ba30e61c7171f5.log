@@ -1,0 +1,60 @@
+09-05-2018 @ 16:07:24 - Requesting session ID...
+09-05-2018 @ 16:07:25 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => ce191a2ccd0649fe89938cb2d12c1c36
+)
+
+09-05-2018 @ 16:07:59 - Requesting session ID...
+09-05-2018 @ 16:07:59 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => d351bd255eeb41e09b74e82f9e129ad2
+)
+
+09-05-2018 @ 16:20:53 - Requesting direct payment for order 174 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>boleto</method>
+  <currency>BRL</currency>
+  <notificationURL><![CDATA[http://localhost/ttwp/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Camiseta TribalTech]]></description>
+      <amount>50.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[WC-174]]></reference>
+  <sender>
+    <email><![CDATA[c95329440305246864214@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>08181597907</value>
+      </document>
+    </documents>
+    <name><![CDATA[Felipe Ferreira de Moura Padilha]]></name>
+    <phone>
+      <areaCode>41</areaCode>
+      <number>999571668</number>
+    </phone>
+    <hash>a5e846b3492f85b1d826d5f4552a5d208b8c7476292bfd58904fc35a21be0586</hash>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Comendador Araújo]]></street>
+      <number>100</number>
+      <complement><![CDATA[AP 122]]></complement>
+      <district><![CDATA[Centro]]></district>
+      <postalCode>80420000</postalCode>
+      <city><![CDATA[Curitiba]]></city>
+      <state>PR</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+</payment>
+
+09-05-2018 @ 16:20:55 - PagSeguro direct payment created successfully!
+09-05-2018 @ 16:20:55 - PagSeguro payment status for order 174 is: 3

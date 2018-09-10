@@ -1,0 +1,50 @@
+.location
+    padding 150px 0
+    +below($bp.md)
+        padding 70px 0 100px
+    .grid
+        display flex
+        flex-wrap: wrap
+    .size-1
+        width 40%
+        height 350px
+        background: $color.black
+        padding 50px 70px 50px 50px
+        +below($bp.lg)
+            width: 100%
+            height auto
+        +below($bp.lg)
+            padding 50px 20px
+        h3
+            font-family: $font-family.secondary
+            font-size 35px
+            color: $color.white
+            margin-bottom 30px
+        p
+            font-size 20px
+            color: $color.white
+            &:not(:last-child)
+                margin-bottom: 15px
+    .size-2
+        width: 30%
+        height: 350px
+        +below($bp.lg)
+            width 50%
+        +below($bp.sm)
+            width 100%
+        &.image-1
+            background: url(../img/usina-1.jpg) center no-repeat
+            background-size cover
+        &.image-2
+            background: url(../img/usina-2.jpg) center no-repeat
+            background-size cover
+    .js-map
+        width 1100px
+        height 350px
+        margin: 0 50px
+        +below($bp.lg)
+            width: 100%
+            margin: 0
+        iframe
+            width 100% !important
+            height: 100% !important

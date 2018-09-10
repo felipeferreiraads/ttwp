@@ -1,0 +1,240 @@
+.page-title
+    display none
+
+.shop-header
+    position relative
+    display flex
+    justify-content: center
+    margin-bottom: 100px
+    .helper
+        display flex
+        flex-direction: column
+        align-items: flex-end
+    h1
+        font: 100px $font-family.secondary
+        color white
+        text-align: center
+        line-height: 1
+    .sub
+        font: bold 40px $font-family.secondary
+        text-transform: uppercase
+        color: #00c1ff
+        letter-spacing: 12px
+
+.shop
+    padding: 120px 0 150px
+    position relative
+    background-image: linear-gradient(to bottom right, #000, #00444f)
+    .grid
+        display flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+.woocommerce-result-count
+    display: none
+
+.woocommerce-ordering
+    select
+        font-size 18px
+
+.product
+    display flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.woocommerce-product-gallery
+    width 40%
+    img
+        width 100%
+        height auto
+
+.summary
+    width 55%
+    padding-bottom: 115px
+    position relative
+    display flex
+    flex-direction: column
+    .product_title
+        font: 40px $font-family.secondary
+        color: white
+        margin-bottom 30px
+    .price
+        font: 30px $font-family.secondary
+        color: white
+        margin-bottom 30px
+        position: absolute
+        bottom: 150px
+        left: 0
+    p
+        font: bold 22px $font-family.secondary
+        color: white
+        margin-bottom 30px
+    input
+        padding: 15px 10px
+        background-color: $color.gray-light
+        color: $color.text
+        outline: 0
+        border: 0
+        -webkit-appearance: none
+        box-sizing: border-box
+        font-weight: 400
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.125)
+        margin 0 10px 30px 0
+        font-size 20px
+        width 80px
+        float left
+    .single_add_to_cart_button
+        font-family: $font-family.secondary
+        padding: 0 10px
+        background: #000
+        color: #fff
+        text-transform: uppercase
+        font-size: 22px
+        font-weight: bold
+        align-self: flex-start
+        margin-top: 20px
+        line-height: 2.4
+        outline: none
+        transition: .2s
+        border: none
+        cursor pointer
+        &:hover
+            background: #222
+    .product_meta
+        display: none
+
+.variations_form
+    flex: 1
+    display flex
+    flex-direction: column
+    justify-content: space-between
+
+.single_variation_wrap
+    flex: 1
+
+.woocommerce-variation-add-to-cart
+    display flex
+    flex-direction: column
+    justify-content: space-between
+
+.woocommerce-variation-add-to-cart
+    height 100%
+
+.woocommerce-tabs
+    width: 100%
+    display flex
+    margin-top 50px
+    .wc-tabs
+        width 250px
+        list-style-type: none
+        padding 0
+        border-width: 1px 0 1px 0
+        border-style: solid
+        border-color: $color.gray-light
+        margin: 0
+        align-self: flex-start
+        li
+            height 53px
+            padding 0 10px
+            &:not(:last-child)
+                border-bottom: 1px solid $color.gray-light
+            &.active
+                background: $color.gray-light
+            a
+                line-height 53px
+                font-size 16px
+                display block
+    .wc-tab
+        flex 1
+        padding-left 30px
+        h2
+            font: 20px $font-family.secondary
+            color: $color.primary
+            margin-bottom 15px
+        p, div > div
+            font-size: 16px
+            color: $color.text
+            line-height 1.5
+            &:not(:last-child)
+                margin-bottom 10px
+
+.flex-control-thumbs
+    display flex
+    list-style-type: none
+    padding: 0
+    > *
+        max-width: 90px
+    > *:not(:last-child)
+        margin-right: 10px
+        cursor pointer
+
+.woocommerce
+    width 1320px
+    max-width 100%
+    padding 100px 20px 50px
+    margin: 0 auto
+    table
+        border: none !important
+    thead
+        background black
+    th
+        padding 20px 0 !important
+        font: 18px $font-family.secondary
+        color: $color.primary
+    img
+        width: 100px !important
+    td
+        font-size: 18px
+    .actions
+        padding: 5px 0 !important
+    .coupon
+        width 45% !important
+        display flex
+        justify-content: space-between
+        input
+            width 60% !important
+    input
+        padding: 15px 10px
+        background-color: $color.gray-light
+        color: $color.text
+        outline: 0
+        border: 0
+        -webkit-appearance: none
+        box-sizing: border-box
+        font-weight: 400
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.125)
+        margin 0 10px 30px 0
+        font-size 18px
+        width 80px
+    button
+        display block
+        height 50px
+        background: $color.primary-two !important
+        font: 16px/35px $font-family.secondary
+        text-align center
+        color white
+        border: none;
+        flex 1
+        color: white !important
+        border-radius: 0 !important
+
+.cart_totals
+    h2
+        font: 20px/35px $font-family.secondary
+        color: $color.primary
+    th
+        background black
+        padding: 20px 10px !important
+        color white
+    .checkout-button
+        display block
+        width 100%
+        height 50px
+        background: $color.primary-two !important
+        font: 16px/35px $font-family.secondary !important
+        text-align center
+        color white
+        border: none;
+        flex 1
+        color: white !important
+        border-radius: 0 !important

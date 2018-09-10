@@ -1,0 +1,339 @@
+09-04-2018 @ 15:51:46 - Requesting session ID...
+09-04-2018 @ 15:51:47 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 97d3e4098e62455195881312f756b59b
+)
+
+09-04-2018 @ 15:54:59 - Requesting direct payment for order 172 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>creditCard</method>
+  <currency>BRL</currency>
+  <notificationURL><![CDATA[http://localhost/ttwp/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Camiseta TribalTech]]></description>
+      <amount>50.00</amount>
+      <quantity>2</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[WC-172]]></reference>
+  <sender>
+    <email><![CDATA[felipe.ferreira.ads@gmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>08181597907</value>
+      </document>
+    </documents>
+    <name><![CDATA[Felipe Ferreira de Moura Padilha]]></name>
+    <phone>
+      <areaCode>41</areaCode>
+      <number>999571668</number>
+    </phone>
+    <hash>3fcdf46b400949c94f3b1f0913dce0c5a4416f37a3fb150ef1a4276a462f9e35</hash>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Comendador Araújo]]></street>
+      <number>100</number>
+      <district><![CDATA[Centro]]></district>
+      <postalCode>80420000</postalCode>
+      <city><![CDATA[Curitiba]]></city>
+      <state>PR</state>
+      <country>BRA</country>
+    </address>
+    <cost>15.00</cost>
+  </shipping>
+  <creditCard>
+    <token>7bf7ed26131a44f7b2cc615b45936d13</token>
+    <installment>
+      <quantity>3</quantity>
+      <value>40.65</value>
+    </installment>
+    <holder>
+      <name><![CDATA[FELIPE F M PADILHA]]></name>
+      <documents>
+        <document>
+          <type>CPF</type>
+          <value>08181597907</value>
+        </document>
+      </documents>
+      <birthDate>24/10/1991</birthDate>
+      <phone>
+        <areaCode>41</areaCode>
+        <number>999571668</number>
+      </phone>
+    </holder>
+    <billingAddress>
+      <street><![CDATA[Rua Comendador Araújo]]></street>
+      <number>100</number>
+      <district><![CDATA[Centro]]></district>
+      <city><![CDATA[Curitiba]]></city>
+      <state>PR</state>
+      <country>BRA</country>
+      <postalCode>80420000</postalCode>
+    </billingAddress>
+  </creditCard>
+</payment>
+
+09-04-2018 @ 15:55:00 - An error occurred while generating the PagSeguro direct payment: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [cache-control] => max-age=180
+                    [content-length] => 236
+                    [content-type] => application/xml;charset=ISO-8859-1
+                    [date] => Tue, 04 Sep 2018 18:55:00 GMT
+                    [expires] => Tue, 04 Sep 2018 18:58:00 GMT
+                    [server] => Apache-Coyote/1.1
+                    [set-cookie] => dtCookie=7$EFE16519B1B7FC63F9BB8BE622E04EAF; Path=/; Domain=.uol.com.br
+                    [vary] => Accept-Encoding,User-Agent
+                    [x-oneagent-js-injection] => true
+                )
+
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: felipe.ferreira.ads@gmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => dtCookie
+                    [value] => 7$EFE16519B1B7FC63F9BB8BE622E04EAF
+                    [expires] => 
+                    [path] => /
+                    [domain] => uol.com.br
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: felipe.ferreira.ads@gmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+                    [raw] => HTTP/1.1 400 Bad Request
+Cache-Control: max-age=180
+Content-Length: 236
+Content-Type: application/xml;charset=ISO-8859-1
+Date: Tue, 04 Sep 2018 18:55:00 GMT
+Expires: Tue, 04 Sep 2018 18:58:00 GMT
+Server: Apache-Coyote/1.1
+Set-Cookie: dtCookie=7$EFE16519B1B7FC63F9BB8BE622E04EAF; Path=/; Domain=.uol.com.br
+Vary: Accept-Encoding,User-Agent
+X-Oneagent-Js-Injection: true
+Connection: close
+
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: felipe.ferreira.ads@gmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [cache-control] => Array
+                                        (
+                                            [0] => max-age=180
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 236
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => application/xml;charset=ISO-8859-1
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Tue, 04 Sep 2018 18:55:00 GMT
+                                        )
+
+                                    [expires] => Array
+                                        (
+                                            [0] => Tue, 04 Sep 2018 18:58:00 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => Apache-Coyote/1.1
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => dtCookie=7$EFE16519B1B7FC63F9BB8BE622E04EAF; Path=/; Domain=.uol.com.br
+                                        )
+
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding,User-Agent
+                                        )
+
+                                    [x-oneagent-js-injection] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 400
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://ws.sandbox.pagseguro.uol.com.br/v2/transactions?email=felipe.ferreira.ads@gmail.com&token=D3BD39A8D4994E3482B48EFD2A9E7544
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [dtCookie] => Requests_Cookie Object
+                                        (
+                                            [name] => dtCookie
+                                            [value] => 7$EFE16519B1B7FC63F9BB8BE622E04EAF
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [path] => /
+                                                            [domain] => uol.com.br
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1536087300
+                                                    [last-access] => 1536087300
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1536087300
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+09-04-2018 @ 15:56:31 - Requesting direct payment for order 172 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>creditCard</method>
+  <currency>BRL</currency>
+  <notificationURL><![CDATA[http://localhost/ttwp/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Camiseta TribalTech]]></description>
+      <amount>50.00</amount>
+      <quantity>2</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[WC-172]]></reference>
+  <sender>
+    <email><![CDATA[felipe.ferreira.ads@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>08181597907</value>
+      </document>
+    </documents>
+    <name><![CDATA[Felipe Ferreira de Moura Padilha]]></name>
+    <phone>
+      <areaCode>41</areaCode>
+      <number>999571668</number>
+    </phone>
+    <hash>3fcdf46b400949c94f3b1f0913dce0c5a4416f37a3fb150ef1a4276a462f9e35</hash>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Comendador Araújo]]></street>
+      <number>100</number>
+      <district><![CDATA[Centro]]></district>
+      <postalCode>80420000</postalCode>
+      <city><![CDATA[Curitiba]]></city>
+      <state>PR</state>
+      <country>BRA</country>
+    </address>
+    <cost>15.00</cost>
+  </shipping>
+  <creditCard>
+    <token>baadb3f63ebe45da90053702b1c77ce5</token>
+    <installment>
+      <quantity>3</quantity>
+      <value>40.65</value>
+    </installment>
+    <holder>
+      <name><![CDATA[FELIPE F M PADILHA]]></name>
+      <documents>
+        <document>
+          <type>CPF</type>
+          <value>08181597907</value>
+        </document>
+      </documents>
+      <birthDate>24/10/1991</birthDate>
+      <phone>
+        <areaCode>41</areaCode>
+        <number>999571668</number>
+      </phone>
+    </holder>
+    <billingAddress>
+      <street><![CDATA[Rua Comendador Araújo]]></street>
+      <number>100</number>
+      <district><![CDATA[Centro]]></district>
+      <city><![CDATA[Curitiba]]></city>
+      <state>PR</state>
+      <country>BRA</country>
+      <postalCode>80420000</postalCode>
+    </billingAddress>
+  </creditCard>
+</payment>
+
+09-04-2018 @ 15:56:34 - PagSeguro direct payment created successfully!
+09-04-2018 @ 15:56:34 - PagSeguro payment status for order 172 is: 1
+09-04-2018 @ 16:24:46 - Requesting session ID...
+09-04-2018 @ 16:24:47 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 94c7fdf980ff4d8d90669a2e91b93ebc
+)
+
+09-04-2018 @ 16:25:28 - Requesting session ID...
+09-04-2018 @ 16:25:28 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 532b2154eba74b1689e0d4b233dfb72f
+)
+
+09-04-2018 @ 18:47:08 - Requesting session ID...
+09-04-2018 @ 18:47:09 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 62fd38677bda424e89fb6401623c42c2
+)
+
