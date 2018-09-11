@@ -5,21 +5,15 @@ class GridShuffle {
         this.element = element
         this.activeFilters = []
         this.shuffle = new Shuffle(element, {
-            itemSelector: '.artist',
-            sizer: '.sizer',
+            itemSelector: '.product-list',
+            sizer: '.sizer-product',
         })
 
         this.addEventListeners()
     }
 
     addEventListeners() {
-        var filter = document.getElementsByClassName('filter-category')
-        filter = Array.from(filter)
-        filter.forEach(function (checkbox) {
-            checkbox.addEventListener('click', this.handleFilterChange.bind(this), false)
-        }, this)
-
-        var filterMobile = document.getElementById('filter-mobile')
+        var filterMobile = document.getElementById('filter-products')
         filterMobile.addEventListener('change', this.handleFilterChange.bind(this), false)
     }
 
@@ -43,7 +37,7 @@ class GridShuffle {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    var element = document.getElementById('grid-artists')
+    var element = document.getElementById('grid-products')
     if(element) {
         window.grid_shuffle = new GridShuffle(element)
     }

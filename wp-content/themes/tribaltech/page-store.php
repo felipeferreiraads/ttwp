@@ -2,6 +2,7 @@
 get_header();
 
 $products = new WP_Query(['post_type' => 'product']);
+$terms = get_terms('product_cat');
 
 if($products->have_posts()): ?>
     <section class="shop">
@@ -13,14 +14,30 @@ if($products->have_posts()): ?>
         </header>
 
         <div class="container">
-            <div class="grid">
+            <div class="filter-products">
+                <select id="filter-products">
+                    <option value="" selected hidden>Categorias</option>
+                    <option value="todos">Todos</option>
+                    <?php
+                    foreach($terms as $term)
+                        echo '<option value="'.$term->slug.'">'.$term->name.'</option>';
+                    ?>
+                </select>
+            </div>
+
+            <div class="grid" id="grid-products">
             <?php
                 while($products->have_posts()): $products->the_post();
                     $product = get_product($products->post);
                     $price = $product->get_price();
                     $interest = $price * 0.0299;
-                    $installment = ($price / 3) + $interest;?>
-                    <div class="product-list">
+                    $installment = ($price / 3) + $interest;
+                    $terms = wp_get_post_terms(get_the_ID(), 'product_cat');
+                    $cats = ['todos'];
+                    foreach($terms as $term)
+                        $cats[] = $term->slug;?>
+
+                    <div class="product-list" data-groups='<?php echo json_encode($cats);?>'>
                         <figure>
                             <a href="<?php the_permalink();?>">
                                 <img src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php get_the_title();?>">
@@ -39,6 +56,7 @@ if($products->have_posts()): ?>
                 <?php
                 endwhile;
             ?>
+                <div class="sizer-product"></div>
             </div>
         </div>
         <div class="skew black"></div>

@@ -13,6 +13,8 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
 
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
 function my_theme_wrapper_start() {
     echo '<section id="shop"><div class="container">';
 }
