@@ -1,0 +1,38 @@
+09-11-2018 @ 16:23:49 - Weight and cubage of the order: Array
+(
+    [weight] => 0,6
+    [height] => 30
+    [width] => 20
+    [length] => 20
+)
+
+09-11-2018 @ 16:23:49 - Requesting Correios WebServices: http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx?nCdServico=40886&nCdEmpresa&sDsSenha&sCepDestino=80420000&sCepOrigem=80215300&nVlAltura=30&nVlLargura=20&nVlDiametro=0&nVlComprimento=20&nVlPeso=0,6&nCdFormato=1&sCdMaoPropria=N&nVlValorDeclarado=160&sCdAvisoRecebimento=N&StrRetorno=xml
+09-11-2018 @ 16:23:49 - Correios WebServices response: SimpleXMLElement Object
+(
+    [cServico] => SimpleXMLElement Object
+        (
+            [Codigo] => 40886
+            [Valor] => 0,00
+            [PrazoEntrega] => 0
+            [ValorSemAdicionais] => 0,00
+            [ValorMaoPropria] => 0,00
+            [ValorAvisoRecebimento] => 0,00
+            [ValorValorDeclarado] => 1,60
+            [EntregaDomiciliar] => SimpleXMLElement Object
+                (
+                )
+
+            [EntregaSabado] => SimpleXMLElement Object
+                (
+                )
+
+            [Erro] => 008
+            [MsgErro] => Serviço indisponível para o trecho informado.
+            [obsFim] => SimpleXMLElement Object
+                (
+                )
+
+        )
+
+)
+

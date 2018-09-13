@@ -1,0 +1,76 @@
+09-12-2018 @ 22:20:56 - Weight and cubage of the order: Array
+(
+    [weight] => 0
+    [height] => 2
+    [width] => 11
+    [length] => 16
+)
+
+09-12-2018 @ 22:20:56 - Requesting Correios WebServices: http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx?nCdServico=04510&nCdEmpresa&sDsSenha&sCepDestino=80420000&sCepOrigem=80215300&nVlAltura=2&nVlLargura=11&nVlDiametro=0&nVlComprimento=16&nVlPeso=0&nCdFormato=1&sCdMaoPropria=N&nVlValorDeclarado=50&sCdAvisoRecebimento=N&StrRetorno=xml
+09-12-2018 @ 22:20:57 - Correios WebServices response: SimpleXMLElement Object
+(
+    [cServico] => SimpleXMLElement Object
+        (
+            [Codigo] => 04510
+            [Valor] => 0,00
+            [PrazoEntrega] => 0
+            [ValorSemAdicionais] => 0,00
+            [ValorMaoPropria] => 0,00
+            [ValorAvisoRecebimento] => 0,00
+            [ValorValorDeclarado] => 0,00
+            [EntregaDomiciliar] => SimpleXMLElement Object
+                (
+                )
+
+            [EntregaSabado] => SimpleXMLElement Object
+                (
+                )
+
+            [Erro] => -888
+            [MsgErro] => Não foi encontrada precificação. ERP-031: Nao informado o peso, a quantidade ou o valor(-1).
+            [obsFim] => SimpleXMLElement Object
+                (
+                )
+
+        )
+
+)
+
+09-12-2018 @ 22:21:55 - Weight and cubage of the order: Array
+(
+    [weight] => 0
+    [height] => 2
+    [width] => 11
+    [length] => 16
+)
+
+09-12-2018 @ 22:21:55 - Requesting Correios WebServices: http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx?nCdServico=04510&nCdEmpresa&sDsSenha&sCepDestino=80420000&sCepOrigem=80215300&nVlAltura=2&nVlLargura=11&nVlDiametro=0&nVlComprimento=16&nVlPeso=0&nCdFormato=1&sCdMaoPropria=N&nVlValorDeclarado=50&sCdAvisoRecebimento=N&StrRetorno=xml
+09-12-2018 @ 22:21:55 - Correios WebServices response: SimpleXMLElement Object
+(
+    [cServico] => SimpleXMLElement Object
+        (
+            [Codigo] => 04510
+            [Valor] => 0,00
+            [PrazoEntrega] => 0
+            [ValorSemAdicionais] => 0,00
+            [ValorMaoPropria] => 0,00
+            [ValorAvisoRecebimento] => 0,00
+            [ValorValorDeclarado] => 0,00
+            [EntregaDomiciliar] => SimpleXMLElement Object
+                (
+                )
+
+            [EntregaSabado] => SimpleXMLElement Object
+                (
+                )
+
+            [Erro] => -888
+            [MsgErro] => Não foi encontrada precificação. ERP-031: Nao informado o peso, a quantidade ou o valor(-1).
+            [obsFim] => SimpleXMLElement Object
+                (
+                )
+
+        )
+
+)
+
