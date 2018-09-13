@@ -85,6 +85,8 @@
         left: 0
         +below($bp.md)
             bottom: 80px
+            left: auto
+            right: 0
     p
         font: bold 22px $font-family.secondary
         color: white
@@ -93,7 +95,7 @@
         padding: 10px
         background-color: $color.gray-light
         color: $color.text
-        outline: 0
+        outline: 0woocommerce-billing-fields__field-wrapper
         border: 0
         -webkit-appearance: none
         box-sizing: border-box
@@ -189,7 +191,7 @@
     thead
         background black
     th
-        padding 20px 0 !important
+        padding 20px 10px !important
         font: 18px $font-family.secondary
     img
         width: 100px !important
@@ -203,7 +205,10 @@
         justify-content: space-between
         input
             width 60% !important
-    input
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    input[type=tel]
         padding: 15px 10px
         background-color: $color.gray-light
         color: $color.text
@@ -248,3 +253,39 @@
         flex 1
         color: white !important
         border-radius: 0 !important
+
+.stock
+    display none
+
+.woocommerce-message
+    width: 100%
+    font-size: 14px;
+
+.woocommerce-billing-fields,
+.woocommerce-shipping-fields
+    label
+        font-size: 16px
+        color white
+
+.selection
+    font-size: 16px
+
+#order_comments
+    height 80px
+
+#order_review_heading
+    font-size: 22px
+    color white
+    margin-top: 50px
+
+.woocommerce-checkout-review-order-table
+    margin: 20px 0 50px !important
+    td
+        padding: 15px 10px !important
+
+#payment
+    font-size: 16px
+    input
+        font-size: 16px !important
+    .woocommerce-privacy-policy-text
+        font-size: 12px
