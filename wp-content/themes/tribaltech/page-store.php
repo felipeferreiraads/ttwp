@@ -7,10 +7,12 @@ $terms = get_terms('product_cat');
 if($products->have_posts()): ?>
     <section class="shop">
         <header class="shop-header">
-            <span class="helper">
-                <h1>TribalTech </h1>
-                <span class="sub">Store</span>
-            </span>
+            <a href="<?php echo site_url('/store/');?>">
+                <span class="helper">
+                    <h1>TribalTech </h1>
+                    <span class="sub">Store</span>
+                </span>
+            </a>
         </header>
 
         <div class="container">
