@@ -1,7 +1,7 @@
 <?php
 get_header();
 
-$products = new WP_Query(['post_type' => 'product']);
+$products = new WP_Query(['post_type' => 'product', 'posts_per_page' => 100, 'order' => 'ASC']);
 $terms = get_terms('product_cat');
 
 if($products->have_posts()): ?>
@@ -45,6 +45,7 @@ if($products->have_posts()): ?>
                                 <img src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php get_the_title();?>">
                             </a>
                         </figure>
+                        <h3><?php echo ucwords(strtolower(get_the_title()));?></h3>
                         <a href="<?php the_permalink();?>" class="button">Comprar agora</a>
                         <div class="price-container">
                             <span class="price">
