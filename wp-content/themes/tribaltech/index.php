@@ -30,19 +30,19 @@
         <span class="title">&nbsp;faltam</span>
         <div class="grid">
             <div class="item-time">
-                <span class="time" id="days">20</span>
+                <span class="time" id="days">00</span>
                 <span class="measure">dias</span>
             </div>
             <div class="item-time">
-                <span class="time" id="hours">08</span>
+                <span class="time" id="hours">00</span>
                 <span class="measure">horas</span>
             </div>
             <div class="item-time">
-                <span class="time" id="minutes">35</span>
+                <span class="time" id="minutes">00</span>
                 <span class="measure">min</span>
             </div>
             <div class="item-time">
-                <span class="time" id="seconds">17</span>
+                <span class="time" id="seconds">00</span>
                 <span class="measure">seg</span>
             </div>
         </div>

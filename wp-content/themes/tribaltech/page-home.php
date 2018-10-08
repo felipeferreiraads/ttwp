@@ -1,7 +1,6 @@
 <?php get_header(); the_post(); ?>
 
     <header class="site-header">
-        <div class="video"></div>
         <div class="container">
             <div class="grid">
                 <h1>TribalTech</h1>
@@ -54,28 +53,7 @@
 
     <section class="line-up" id="artistas">
         <div class="container">
-            <div class="grid-filter">
-                <h2 class="ui-title">Artistas<br />Confirmados</h2>
-                <div class="filter">
-                    <button class="filter-category" data-group="tribaltech">TribalTech</button>
-                    <button class="filter-category" data-group="timetech">Timetech</button>
-                    <button class="filter-category" data-group="supercool">Supercool</button>
-                    <button class="filter-category" data-group="organic-beat">Organic Beat</button>
-                    <button class="filter-category" data-group="3dttrip">3DTTRIP</button>
-                    <button class="filter-category" data-group="351">351</button>
-                </div>
-                <div class="filter-mobile">
-                    <select id="filter-mobile">
-                        <option value="">Escolha o palco desejado</option>
-                        <option value="tribaltech">TribalTech</option>
-                        <option value="timetech">Timetech</optio>
-                        <option value="supercool">Supercool</option>
-                        <option value="organic-beat">Organic Beat</option>
-                        <option value="3dttrip">3DTTRIP</option>
-                        <option value="351">351</option>
-                    </select>
-                </div>
-            </div>
+            <h2 class="ui-title">Artistas<br />Confirmados</h2>
 
             <div class="grid" id="grid-artists">
             <?php
@@ -141,7 +119,7 @@
         <div class="container">
             <h2 class="ui-title black uppercase right">Ingressos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />Adquira o seu</h2>
             <div class="grid">
-            <?php 
+            <?php
                 $count = 0;
                 while ( have_rows('ingressos') ) : the_row();
                     $count++;
@@ -164,26 +142,5 @@
         </div>
         <div class="skew white"></div>
     </section>
-
-    <section class="trip" id="excursoes">
-        <div class="container">
-            <h2 class="ui-title right uppercase">Excursões&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />Organize a sua</h2>
-            <div class="trips">
-                <button>Excursões credenciadas <span class="icon-check"></span></button>
-                <p class="mails right">silvana@aloingressos.com.br<br>41 3042-6262</p>
-            </div>            
-            <div class="packages">
-                <h2 class="ui-title uppercase">Pacotes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />de turismo</h2>
-                <div class="wt">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/wt.png" alt="WT">
-                    <span>Passagens, hotel <br>e translado</span>
-                </div>
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/icon-excursoes.png" alt="WT" class="icons">
-                <span class="info">Adquira um pacote completo contendo passagens, hospedagem, translados e ingressos.</span>
-                <p class="mails">bruna@worldtour.tur.br<br>41 3045-0809</p>
-            </div>
-        </div>
-        <div class="skew black"></div>
-    </section>    
 
 <?php get_footer(); ?>

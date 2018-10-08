@@ -2,8 +2,6 @@
         <h2 class="ui-title center uppercase">Contato<br />&nbsp;Fale conosco</h2>
         <h3>Ingressos</h3>
         <span class="info">contato@aloingressos.com.br / (41) 3042-6262</span>
-        <h3>Credenciamento de imprensa</h3>
-        <a href="https://goo.gl/forms/UP63j93XMpcLCZNR2" target="_blank" class="info">Tipcomm / Assessoria em comunicação</a>
         <h3>Outros assuntos</h3>
         <span class="info">contato@tribaltech.com.br / (41) 3284-3344</span>
         <div class="social pink center">

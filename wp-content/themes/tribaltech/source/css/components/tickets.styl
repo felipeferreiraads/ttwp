@@ -10,7 +10,7 @@
         flex-wrap: wrap
         +below($bp.lg)
             flex-direction column
-            align-items: center 
+            align-items: center
     .ticket
         width 100%
         background: $color.black
@@ -20,16 +20,6 @@
         position relative
         &:not(:last-child)
             margin-bottom 20px
-        &:first-child
-            background: url(../img/ticket-1.png) no-repeat $color.black;
-            background-position 85% 0
-            background-size 28%
-        &.gradient
-            background: url(../img/gradient.jpg) center no-repeat
-            background-size cover
-        &:last-child
-            background: url(../img/ticket-2.png) top right no-repeat $color.black;
-            background-size 23%
         +below($bp.lg)
             padding 50px 20px
         .category

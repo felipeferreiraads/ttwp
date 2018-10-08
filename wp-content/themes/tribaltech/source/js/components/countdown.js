@@ -1,12 +1,12 @@
 import moment from 'moment'
 
-var eventTime = moment('2018-09-22 14:00:00', 'YYYY-MM-DD HH:mm:ss').unix()
+var eventTime = moment('2018-11-09 23:00:00', 'YYYY-MM-DD HH:mm:ss').unix()
 var currentTime = moment().unix()
 var diffTime = eventTime - currentTime
 var duration = moment.duration(diffTime * 1000, 'milliseconds')
 var interval = 1000
 
-var event = moment('2018-09-22 14:00:00', 'YYYY-MM-DD HH:mm:ss')
+var event = moment('2018-11-09 23:00:00', 'YYYY-MM-DD HH:mm:ss')
 
 if (diffTime > 0) {
     setInterval(function () {
