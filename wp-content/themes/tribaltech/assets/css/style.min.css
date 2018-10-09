@@ -432,34 +432,34 @@ textarea {
   clear: both;
 }
 ._color-primary {
-  color: #ff00a4 !important;
+  color: #fff !important;
 }
 ._bg-color-primary {
-  background-color: #ff00a4 !important;
+  background-color: #fff !important;
 }
 ._color-primary-two {
-  color: #ff00e9 !important;
+  color: #fff !important;
 }
 ._bg-color-primary-two {
-  background-color: #ff00e9 !important;
+  background-color: #fff !important;
 }
 ._color-primary-three {
-  color: #8d00a9 !important;
+  color: #fff !important;
 }
 ._bg-color-primary-three {
-  background-color: #8d00a9 !important;
+  background-color: #fff !important;
 }
 ._color-primaryhover {
-  color: #a42e71 !important;
+  color: #fff !important;
 }
 ._bg-color-primaryhover {
-  background-color: #a42e71 !important;
+  background-color: #fff !important;
 }
 ._color-secondary {
-  color: #151b46 !important;
+  color: #000 !important;
 }
 ._bg-color-secondary {
-  background-color: #151b46 !important;
+  background-color: #000 !important;
 }
 ._color-success {
   color: #2ecc71 !important;
@@ -510,10 +510,10 @@ textarea {
   background-color: #00c1ff !important;
 }
 ._color-multiply {
-  color: #c401e1 !important;
+  color: rgba(0,0,0,0.4) !important;
 }
 ._bg-color-multiply {
-  background-color: #c401e1 !important;
+  background-color: rgba(0,0,0,0.4) !important;
 }
 ._color-facebook {
   color: #3b5998 !important;
@@ -1201,13 +1201,13 @@ textarea {
   padding-right: 50px !important;
 }
 .primary {
-  color: #ff00a4;
+  color: #fff;
 }
 .primary-two {
-  color: #ff00e9;
+  color: #fff;
 }
 .primary-three {
-  color: #8d00a9;
+  color: #fff;
 }
 *,
 *::before,
@@ -1333,7 +1333,7 @@ figure {
   }
 }
 .contact h2 {
-  color: #8d00a9;
+  color: #fff;
 }
 .contact h3 {
   font-size: 22px;
@@ -1396,7 +1396,7 @@ figure {
   }
 }
 .contact .links a:hover {
-  background: #8d00a9 !important;
+  background: #fff !important;
 }
 .site-header {
   height: 110vh;
@@ -1503,24 +1503,24 @@ figure {
   color: #fff;
 }
 .social.pink {
-  color: #151b46;
+  color: #000;
   margin-top: 70px;
 }
 .social.pink > span {
   font-size: 22px;
 }
 .social.pink > .links a {
-  border-color: #151b46 !important;
+  border-color: #000 !important;
 }
 .social.pink > .links a:hover {
-  background: #151b46;
+  background: #000;
 }
 .social.center {
   align-items: center;
-  color: #8d00a9 !important;
+  color: #fff !important;
 }
 .social.center .links a {
-  border-color: #8d00a9 !important;
+  border-color: #fff !important;
 }
 .social span {
   font-size: 14px;
@@ -1663,7 +1663,7 @@ figure {
 }
 .history .image-2 h3 {
   font-size: 35px;
-  color: #ff00e9;
+  color: #fff;
   text-align: right;
   text-transform: uppercase;
   max-width: 70%;
@@ -1775,8 +1775,8 @@ figure {
 .line-up .filter button:hover,
 .line-up .filter button.active,
 .line-up .filter button:active {
-  background: #8d00a9;
-  border-color: #8d00a9;
+  background: #fff;
+  border-color: #fff;
 }
 .line-up .filter-mobile {
   border: 2px solid #fff;
@@ -1838,7 +1838,7 @@ figure {
 }
 .line-up .artist.multiply {
   background-blend-mode: multiply;
-  background-color: #c401e1;
+  background-color: rgba(0,0,0,0.4);
 }
 .line-up .artist:hover {
   transition: 0.2s;
@@ -2493,7 +2493,7 @@ figure {
   position: relative;
 }
 .tickets h2 {
-  color: #8d00a9;
+  color: #fff;
 }
 @media only screen and (max-width: 800px) {
   .tickets {
@@ -2642,7 +2642,7 @@ figure {
 }
 .timer .item-time .time {
   font-size: 100px;
-  color: #151b46;
+  color: #000;
   font-family: 'Replica Std' , sans-serif;
 }
 .timer .item-time .measure {
@@ -2659,7 +2659,7 @@ figure {
   height: 0;
   border-style: solid;
   border-width: 45px 25px 0 25px;
-  border-color: #ff00e9 transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;
 }
 .trip {
   padding: 150px 0;
@@ -2689,8 +2689,8 @@ figure {
 .trip .trips button:hover,
 .trip .trips button.active,
 .trip .trips button:active {
-  background: #8d00a9;
-  border-color: #8d00a9;
+  background: #fff;
+  border-color: #fff;
 }
 .trip .mails {
   font-size: 24px;

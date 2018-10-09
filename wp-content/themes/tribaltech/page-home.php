@@ -5,8 +5,7 @@
             <div class="grid">
                 <h1>TribalTech</h1>
                 <p>
-                    <span class="primary">Enlighten</span>
-                    <span class="primary-two">22<img src="<?php echo get_template_directory_uri();?>/assets/img/bar.png">Set<img src="<?php echo get_template_directory_uri();?>/assets/img/bar.png">18</span>
+                    <span class="primary-two">09<img src="<?php echo get_template_directory_uri();?>/assets/img/bar.png">Nov<img src="<?php echo get_template_directory_uri();?>/assets/img/bar.png">18</span>
                     <span class="primary-three">Usina 5</span>
                 </p>
                 <div class="info">
